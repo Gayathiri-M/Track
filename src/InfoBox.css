@@ -1,0 +1,53 @@
+.stats{
+    flex:1;
+    cursor:pointer;
+}
+
+.stats:not(:last-child){
+    margin-right: 15px;
+}
+
+.infoBox-cases{
+    color:#6c757d;
+    font-weight:600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.infoBox-total{
+    color:#6c757d;
+    font-weight: 800 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+
+.infoBox-selected{
+    border-top:8px solid white;
+    color:#6c757d;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.infoBox-tange{
+    border-color: #f28500;
+    
+}
+
+.infoBox-green{
+    border-color:#7dd71d;
+}
+
+.infoBox-red{
+    border-color:#CC1034;
+}
+
+.infoBox-tange-count{
+    color:rgba(242,133,0,0.6);
+}
+
+.infoBox-green-count{
+    color:rgba(125, 215, 29, 0.6);
+}
+
+.infoBox-red-count{
+    color: rgba(204, 16, 52, 0.6);
+}

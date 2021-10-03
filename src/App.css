@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  justify-content: space-evenly;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-up{
+  display:flex;
+  margin-left: 25px;
+  padding: 8px;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.app-left{
+  flex:0.95;
+}
+
+.gt-container{
+  height: 850px;
+}
+
+.graph-container{
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 35px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header{
+  margin: 5px;
+  display: flex;
+  justify-content:space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header h1{
+  color:crimson;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer{
+  left:0;
+  bottom: 0;
+  height: 40px;
+  width:100vw;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight:400;
+  background-color:powderblue;
+  color: #665f5f;
+}
+
+.drop{
+  margin-right: 15px;
+  margin-top: 10px;
+  width:130px;
+  color:darkslategray;
+  padding: 5px;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  border:2px solid rgb(156, 156, 156);
+  border-radius: 0px 0px 18px 18px;
+}
+
+.drop:focus{
+  outline: none;
+}
+
+.info{
+  display:flex;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+.chart{
+  color: #665f5f;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 15px;
+}
+
+.graph{
+  flex-grow: 1;
+  width:100%;
+  padding:15px;
+  margin-top: 0;
+} 
+
+
+
+@media (max-width:710px) {
+  .app{
+    flex-direction: column;
+    flex-grow: 1;
   }
-  to {
-    transform: rotate(360deg);
+  .app-up{
+    flex-direction: column;
+    margin:10px;
+
   }
+  .app-left{
+    margin:15px;
+  }
+}
+
+@media (max-width:477px){
+  .app-up{
+    flex-direction: column;
+    margin:5px;
+  }
+  .app-left{
+    margin:5px;
+  }
+  .gt-container{
+    flex-grow: 1;
+    width:250px;
+    margin-left: 15px;
+  }
+  
 }
