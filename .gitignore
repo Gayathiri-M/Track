@@ -6,9 +6,10 @@
 .pnp.js
 
 #firebase
-.firebase
-.firebasesrc
+.firebase/
+.firebaserc
 firebase.json
+
 
 
 # testing
