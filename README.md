@@ -1,3 +1,10 @@
+This is a React.js based covid tracking web app.
+
+# To see the deployed web app
+
+ https://track-covid-3acd0.web.app
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
